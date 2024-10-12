@@ -3,9 +3,9 @@ import pymysql
 def connect_to_database():
     try:
         db = pymysql.connect(
-            host="localhost",
+            host="*****",
             user="root",
-            password="mysql369963",
+            password="*******",
             database="CRIMINALDB"
         )
         print("Connected to MySQL server")
@@ -237,8 +237,8 @@ def modifyTableSchema():
         db = pymysql.connect(
             host="localhost",
             user="root",
-            password="mysql369963",
-            database="CRIMINALDB"
+            password="*******",
+            database="*******"
         )
         cursor = db.cursor()
         print("Database connected")
